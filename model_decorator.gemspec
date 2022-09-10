@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Lapo Elisacci", "Hassaan Chaudhry"]
   spec.email = ["lapoelisacci@gmail.com", "mhassaanchaudhry@gmail.com"]
 
-  spec.summary = "The gem helps integrating the Decorator Pattern into Ruby code."
-  spec.description = ""
+  spec.summary = "The gem allows you to easily define methods to decorate your Model Classes"
+  spec.description = "This wraps the logic of SimpleDelegator to use the Decorator Design Patter in a Ruby style fashion."
   spec.homepage = "https://github.com/LapoElisacci/model_decorator"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"

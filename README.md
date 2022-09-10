@@ -1,8 +1,7 @@
 # ModelDecorator
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/model_decorator`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+The gem allows you to easily define methods to decorate your classes.
+Decorator Classes will have to inherit from `SimpleDelegator`.
 
 ## Installation
 
@@ -16,7 +15,32 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+### 1) Define a Decorator class
+
+```Ruby
+class EmailDecorator < SimpleDelegator # Decorators MUST inherit from SimpleDelegator
+    def send_email
+        # Add logic here
+    end
+end
+```
+
+### 2) Include ModelDecorator module
+
+```Ruby
+class User
+    include ModelDecorator
+
+    decorate_with EmailDecorator, as: :mailer
+end
+```
+
+### 3) Call the decorator class methods
+
+```Ruby
+user = User.new
+user.mailer.send_email # Same as EmailDecorator.new(user).send_email
+```
 
 ## Development
 
@@ -26,7 +50,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/model_decorator. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/model_decorator/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/LapoElisacci/model_decorator. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/LapoElisacci/model_decorator/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -34,4 +58,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the ModelDecorator project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/model_decorator/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the ModelDecorator project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/LapoElisacci/model_decorator/blob/main/CODE_OF_CONDUCT.md).
