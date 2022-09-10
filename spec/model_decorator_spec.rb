@@ -44,6 +44,12 @@ RSpec.describe ModelDecorator do
           it "Doesn't raise an Exception" do
             expect { TestClass.decorate_with(TestDecoratorClass, as: :symbol) }.to_not raise_exception
           end
+
+          it "Defines the relative instance Method" do
+            result = TestClass.decorate_with(TestDecoratorClass, as: :test_decoration)
+            expect(result.instance_methods.include?(:test_decoration)).to be_truthy
+            expect(result.new.test_decoration.class).to eq(TestDecoratorClass)
+          end
         end
       end
     end
