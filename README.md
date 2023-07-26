@@ -51,6 +51,8 @@ The gem is available as open source under the terms of the [﻿MIT License](http
 ## Code of Conduct
 Everyone interacting in the ModelDecorator project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [﻿code of conduct](https://github.com/LapoElisacci/model_decorator/blob/main/CODE_OF_CONDUCT.md).
 
+![Figure 1](/.eraser/Srmc9fqWYvSCzwXq0hz7___CeTWjOPIt1Vxkr9dMxfoernFDkc2___---figure---ahQmSkMJv1LPZAWZQ3y6g---figure---TAC7PpbSj4O5anxpLprVOg.png "Figure 1")
+
 
 
 
