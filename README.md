@@ -1,5 +1,3 @@
-<p><a target="_blank" href="https://app.eraser.io/workspace/Srmc9fqWYvSCzwXq0hz7" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
-
 # ModelDecorator
 The gem allows you to easily define methods to decorate your classes.
 Decorator Classes will have to inherit from `SimpleDelegator`.
@@ -50,12 +48,3 @@ The gem is available as open source under the terms of the [﻿MIT License](http
 
 ## Code of Conduct
 Everyone interacting in the ModelDecorator project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [﻿code of conduct](https://github.com/LapoElisacci/model_decorator/blob/main/CODE_OF_CONDUCT.md).
-
-
-
-![Figure 1](/.eraser/Srmc9fqWYvSCzwXq0hz7___CeTWjOPIt1Vxkr9dMxfoernFDkc2___---figure---jSVc01XSN6Ac5Rj9hs7I6---figure---32kHPPgWHfNTy6wClSeoWg.png "Figure 1")
-
-
-
-
-<!--- Eraser file: https://app.eraser.io/workspace/Srmc9fqWYvSCzwXq0hz7 --->
